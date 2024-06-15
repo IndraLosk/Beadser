@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TeshCanvas">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@color/darkbrain"
+                android:gravity="clip_vertical"
+                android:onClick="Back"
+                android:text="←"
+                android:textColor="@color/text"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkbrain"
+                android:gravity="center"
+                android:text="Полотно"
+                android:textColor="@color/text"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tТехника полотно незаслуженно считается самой сложной схемой бисероплетения для начинающих. Все потому, что с ее помощью можно сделать браслеты с именами, геометрическими узорами и любыми рисунками. На самом деле она очень проста. Для понимания она даже проще, чем все остальные.
+\n\t\t\tДля начала нужно определиться с шириной фенечки. Допустим, это 9 бисерин. В этом случае нам надо нанизать на леску 10 бусинок. Последнюю мы поставим во второй ряд. Пропустим через соседнюю бусину леску (через девятую), а затем снова через нее. Нанизываем следующую бусину – повторяем все то же самое с восьмой бисеринкой. Так доходим до конца ряда и переходим к следующему.
+\n\t\t\tСхема плетения фенечки из бисера полотном выглядит вот так."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/canvas01" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tПоследний ряд можно замкнуть на первый или оставить как есть, а затем привязать крепления для браслетов.
+\n\t\t\tСхема плетения фенечки с именем выглядит следующим образом."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/canvas02" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tМожно сплести ее на станке. Для этого натяните необходимое число отрезков лески или нити, а затем нанизывайте на них бусины, скрепляя перпендикулярной леской по стрелкам.
+\n\t\t\tЧтобы написать на фенечке любое имя, достаточно просто построить аналогичную схему на бумаге, где одна клеточка – одна бисерина. Сразу можно определиться с цветом и фактурой. Это поможет сплести полотно достаточно быстро и не ошибиться, когда и сколько бисеринок нужно подплести."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:srcCompat="@drawable/canvas03" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tОчень часто мастера пользуется для плетения полотном нитками, чтобы браслеты получались мягче. Разумнее всего взять шелковую нить – ее трудно порвать, она тонкая, с ней легко работать. Тогда ваши фенечки получатся идеальными. Леска же действительно довольно жесткая, а потому фенечки с ней порой выгибаются.
+\n\t\t\tХотя иногда жесткость придает браслету дополнительную красоту. Это особенно хорошо работает с крупным бисером или даже бусинами."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/canvas04" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tЕсли вы хотите сплести фенечку, которая держит форму, можно воспользоваться даже проволокой. Плести будет немного сложнее, зато поделка получится непохожей на другие. Правда, при частом перегибании проволока может разорваться. Так что ваш браслет рискует рассыпаться."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/canvas05" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tСхемы узоров для фенечек создаются так же, как и рисунки имен. Просто нарисуйте желаемый результат на бумаге и внимательно считайте. Можно даже вычеркивать ряды, которые вы уже подплели, чтобы не запутаться."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/canvas06" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tМожете взять некоторые из этих схем для плетения широких фенечек в качестве ориентира."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/canvas07" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

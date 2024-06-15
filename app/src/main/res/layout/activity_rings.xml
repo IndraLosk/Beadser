@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Rings">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@color/darkbrain"
+                android:gravity="clip_vertical"
+                android:onClick="Back"
+                android:text="←"
+                android:textColor="@color/text"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/rings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkbrain"
+                android:gravity="center"
+                android:text="Кольца"
+                android:textColor="@color/text"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Для просмотра инструкции, нажмите на понравившееся изображение"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/brain"
+                        android:gravity="center"
+                        android:text="Черно-желтое"
+                        android:textColor="@color/text"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/star1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/brain"
+                        android:backgroundTint="@color/brain"
+                        android:onClick="YellowBlackFavorite"
+                        app:srcCompat="@drawable/notfavorite" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/yelowBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:onClick="YelowBlack"
+                app:srcCompat="@drawable/yelowblackring01" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/brain"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Вишенки"
+                        android:textColor="@color/text"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/brain"
+                        android:backgroundTint="@color/brain"
+                        android:onClick="CherryFavorite"
+                        app:srcCompat="@drawable/notfavorite" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cherry"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:onClick="Cherry"
+                app:srcCompat="@drawable/cherryring01" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/brain"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Ромашки"
+                        android:textColor="@color/text"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/brain"
+                        android:backgroundTint="@color/brain"
+                        android:onClick="ChamomileFavorite"
+                        app:srcCompat="@drawable/notfavorite" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/chamomile"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:onClick="Chamomile"
+                app:srcCompat="@drawable/chamomile01" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/brain"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Переплетенное"
+                        android:textColor="@color/text"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/star4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/brain"
+                        android:backgroundTint="@color/brain"
+                        android:onClick="IntertwinedFavorite"
+                        app:srcCompat="@drawable/notfavorite" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/intertwined"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:onClick="Intertwined"
+                app:srcCompat="@drawable/intertwined01" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

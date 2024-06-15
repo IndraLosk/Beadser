@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FenechkaInfNew">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@color/darkbrain"
+                android:gravity="clip_vertical"
+                android:onClick="Back"
+                android:text="←"
+                android:textColor="@color/text"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkbrain"
+                android:gravity="center"
+                android:text="Фенечки"
+                android:textColor="@color/text"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tФенечка из бисера - это браслет или ожерелье, сделанное из бисера, обычно сплетенного в узор. Они обычно плетутся вручную и могут быть украшены различными символами, буквами или узорами."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/feninfnew01" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Станок для бисероплетения"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tПри плетении фенечек из бисера обычно используют станок для бисероплетения. На рынке представлено большое разнообразие станков для бисероплетения."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/feninfnew02" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\tОднако, для плетения фенечек вполне подойдёт и станок, сделанный самостоятельно. Самым простым вариантом будет использование крышки от коробки. Канцелярским ножом делаем надрезы на противоположных сторонах коробки параллельно друг другу. Расстояние между надрезами должно быть примерно одинаковым.\n\t\t\tЗакрепляем нити и приступаем к работе"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:srcCompat="@drawable/feninfnew03" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фенечка на станке"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="\t\t\t1. Плотно закрепляем необходимое количество нитей. Их должно быть на одну больше, чем количество бисеринок по ширине фенечки.
+\n\t\t\t2. Отрезаем длинную нить, вставляем в иголочку. Кончик нити связываем узелком с крайней нитью на станке. От узелка до узелка необходимо оставить достаточную длину, чтобы в конце сделать застёжки.
+\n\t\t\t3. Набираем на иголку необходимое количество бисеринок.
+\n\t\t\t4. Продеваем иглу под нитями на станке.
+\n\t\t\t5. Распределяем бисер между нитками по одной бисеринки.
+\n\t\t\t6. Продеваем иголку во все бисеринки над натянутыми нитками.
+\n\t\t\t7. Затягиваем. Получился первый ряд фенечки.
+\n\t\t\t8. Аналогично плетём второй и последующие ряды.
+\n\t\t\t9. Чередуем цвета бисеринок в зависимости от узора.
+\n\t\t\t10. Когда фенечка достигла необходимой длины, закрепляем рабочую нить узелком на крайней нити на станке. Так же мы делали в начале работы.
+\n\t\t\t11. Снимаем нитки с одной стороны станка.
+\n\t\t\t12. Завязываем простой двойной узелок.
+\n\t\t\t13. То же самое делаем с другой стороны. Кончики заплетаем в косичку либо закрепляем замочек. Фенечка готова!"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:autoStart="true">
+            </VideoView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

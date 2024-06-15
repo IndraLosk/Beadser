@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Braslets">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@color/darkbrain"
+                android:gravity="clip_vertical"
+                android:onClick="Back"
+                android:text="←"
+                android:textColor="@color/text"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkbrain"
+                android:gravity="center"
+                android:text="Браслеты"
+                android:textColor="@color/text"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Для просмотра инструкции, нажмите на понравившееся изображение"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/IDgoldWithPedding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/brain"
+                        android:gravity="center"
+                        android:text="Золото с камушками"
+                        android:layout_weight="1"
+                        android:textColor="@color/text"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/star"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/brain"
+                        android:backgroundTint="@color/brain"
+                        android:onClick="GoldWithPebblesFavorite"
+                        app:srcCompat="@drawable/notfavorite" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:onClick="GoldWithPebbles"
+                    app:srcCompat="@drawable/goldwithpebbles01" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Hearts"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/brain"
+                        android:gravity="center"
+                        android:text="Сердца"
+                        android:textColor="@color/text"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/brain"
+                        android:backgroundTint="@color/brain"
+                        android:onClick="Hearts"
+                        app:srcCompat="@drawable/notfavorite" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/HeartsButt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:onClick="ToHearts"
+                    app:srcCompat="@drawable/hearts01" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/RowsOfHearts"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/brain"
+                        android:gravity="center"
+                        android:text="Сердечный ряд"
+                        android:textColor="@color/text"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/brain"
+                        android:backgroundTint="@color/brain"
+                        android:onClick="RowOfHeartsFavorite"
+                        app:srcCompat="@drawable/notfavorite" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/RowsOfHeartsButt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:onClick="ToRowsOfHearts"
+                    app:srcCompat="@drawable/rowsofhearts01" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/brain"
+                        android:gravity="center"
+                        android:text="Плетенное"
+                        android:textColor="@color/text"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/star4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/brain"
+                        android:backgroundTint="@color/brain"
+                        android:onClick="BraidedFavorite"
+                        app:srcCompat="@drawable/notfavorite" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/braidedButt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:onClick="ToBraided"
+                    app:srcCompat="@drawable/braided01" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
