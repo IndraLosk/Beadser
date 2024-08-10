@@ -4,8 +4,8 @@ _____
 Мобильное приложение для просмотра разнообразных схем для бисероплетения, а также предоставления возможности создания макета для фенечек.
 При запуске пользователь увидит экран, с изображением приложения и приветственным сообщением, которое будет меняться в зависимости от времени суток.
 <div>
-  <img src="" width="180" height="400" alt="Good day">
-  <img src="" width="180" height="400" alt="Good evening">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/good_day.png" width="180" height="400" alt="Good day">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/good_evening.png" width="180" height="400" alt="Good evening">
 </div>
 
 После исчезновения экрана загрузки, появится главный экран, где можно увидеть все возможности приложения. На этом экране расположены кнопки, которые позволят перейти к различным разделам приложения, таким как: 
@@ -15,13 +15,13 @@ _____
  - раздел с фенечками, где пользователь сможет создать свой уникальный макет для плетенного браслета, выбрав нужные цвета и сохранить его в файле телефона.
 
 <div>
-  <img src="" width="180" height="400" alt="chapter_inf1">
-  <img src="" width="180" height="400" alt="chapter_inf2">
-  <img src="" width="180" height="400" alt="chapter_ring1">
-  <img src="" width="180" height="400" alt="chapter_ring2">
-  <img src="" width="180" height="400" alt="chapter_favorite">
-  <img src="" width="180" height="400" alt="chapter_fen1">
-  <img src="" width="180" height="400" alt="chapter_fen2">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_fen1.png" width="180" height="400" alt="chapter_inf1">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_inf2.png" width="180" height="400" alt="chapter_inf2">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_ring1.png" width="180" height="400" alt="chapter_ring1">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_ring2.png" width="180" height="400" alt="chapter_ring2">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_favorite.png" width="180" height="400" alt="chapter_favorite">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_fen1.png" width="180" height="400" alt="chapter_fen1">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_fen2.png" width="180" height="400" alt="chapter_fen2">
 </div>
 
 _____
