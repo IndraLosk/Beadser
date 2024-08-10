@@ -15,7 +15,7 @@ _____
  - раздел с фенечками, где пользователь сможет создать свой уникальный макет для плетенного браслета, выбрав нужные цвета и сохранить его в файле телефона.
 
 <div>
-  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_fen1.png" width="180" height="400" alt="chapter_inf1">
+  <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_inf1.png" width="180" height="400" alt="chapter_inf1">
   <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_inf2.png" width="180" height="400" alt="chapter_inf2">
   <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_ring1.png" width="180" height="400" alt="chapter_ring1">
   <img src="https://github.com/IndraLosk/Beadser/blob/main/img%20for%20git/chapter_ring2.png" width="180" height="400" alt="chapter_ring2">
